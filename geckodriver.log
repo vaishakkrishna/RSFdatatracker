@@ -1,0 +1,354 @@
+1665709277614	geckodriver	INFO	Listening on 127.0.0.1:52434
+1665709295919	geckodriver	INFO	Listening on 127.0.0.1:52516
+1665709405931	geckodriver	INFO	Listening on 127.0.0.1:53778
+1665709405943	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "53779" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofilezPRXNn"
+*** You are running in headless mode.
+1665709426939	Marionette	INFO	Marionette enabled
+1665709426984	Marionette	INFO	Listening on port 53818
+Read port: 53818
+2022-10-13 18:03:47.089 plugin-container[63679:2598724] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:03:47.089 plugin-container[63679:2598724] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:03:47.126 plugin-container[63679:2598724] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:03:47.126 plugin-container[63679:2598724] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:03:47.126 plugin-container[63679:2598722] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:03:47.126 plugin-container[63679:2598722] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:53779
+1665709427301	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofilezPRXNn/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53779/devtools/browser/3251c743-a6e7-41b8-b6a3-bc2f22a47488
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
+1665709497197	geckodriver	INFO	Listening on 127.0.0.1:54239
+1665709497206	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "54240" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofileI0oASQ"
+2022-10-13 18:04:57.825 plugin-container[63713:2599795] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:04:57.825 plugin-container[63713:2599795] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:04:57.830 plugin-container[63713:2599795] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:04:57.830 plugin-container[63713:2599795] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:04:57.830 plugin-container[63713:2599797] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:04:57.830 plugin-container[63713:2599797] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1665709497859	Marionette	INFO	Marionette enabled
+1665709497904	Marionette	INFO	Listening on port 54243
+Read port: 54243
+WebDriver BiDi listening on ws://127.0.0.1:54240
+1665709498231	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofileI0oASQ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54240/devtools/browser/dab31c16-1f30-409a-aee8-51e5cc475f2b
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
+1665709521958	geckodriver	INFO	Listening on 127.0.0.1:54366
+1665709522480	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "54367" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofileWj5bX6"
+2022-10-13 18:05:23.164 plugin-container[63730:2600322] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:05:23.165 plugin-container[63730:2600322] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:05:23.171 plugin-container[63730:2600322] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:05:23.171 plugin-container[63730:2600322] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:05:23.171 plugin-container[63730:2600331] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:05:23.172 plugin-container[63730:2600331] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1665709523193	Marionette	INFO	Marionette enabled
+1665709523244	Marionette	INFO	Listening on port 54373
+Read port: 54373
+WebDriver BiDi listening on ws://127.0.0.1:54367
+1665709523517	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofileWj5bX6/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54367/devtools/browser/e2277b85-26e8-4625-aa1d-bd7a43db95fb
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
+1665709678842	geckodriver	INFO	Listening on 127.0.0.1:55096
+1665709679370	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "55097" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofileQJxZ7v"
+*** You are running in headless mode.
+1665709681463	Marionette	INFO	Marionette enabled
+1665709681591	Marionette	INFO	Listening on port 55103
+2022-10-13 18:08:01.643 plugin-container[63893:2604238] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:08:01.644 plugin-container[63893:2604238] nil host used in call to allowsAnyHTTPSCertificateForHost:
+Read port: 55103
+2022-10-13 18:08:01.912 plugin-container[63893:2604238] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:08:01.912 plugin-container[63893:2604238] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:08:01.913 plugin-container[63893:2604294] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:08:01.913 plugin-container[63893:2604294] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:55097
+1665709682116	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofileQJxZ7v/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55097/devtools/browser/03c26252-5044-4160-aa04-844daff4befd
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
+1665709693040	geckodriver	INFO	Listening on 127.0.0.1:55248
+1665709693051	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "55249" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofile1UI2tQ"
+*** You are running in headless mode.
+1665709693970	Marionette	INFO	Marionette enabled
+1665709694009	Marionette	INFO	Listening on port 55253
+2022-10-13 18:08:14.016 plugin-container[63915:2604727] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:08:14.016 plugin-container[63915:2604727] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:08:14.021 plugin-container[63915:2604727] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:08:14.021 plugin-container[63915:2604727] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:08:14.021 plugin-container[63915:2604754] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:08:14.021 plugin-container[63915:2604754] nil host used in call to allowsAnyHTTPSCertificateForHost:
+Read port: 55253
+WebDriver BiDi listening on ws://127.0.0.1:55249
+1665709694384	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofile1UI2tQ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55249/devtools/browser/3199f67b-8a75-40a9-8ebd-bf674ae11b3b
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
+1665709705366	geckodriver	INFO	Listening on 127.0.0.1:55405
+1665709705377	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "55406" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofilegV1amn"
+1665709706555	Marionette	INFO	Marionette enabled
+1665709706643	Marionette	INFO	Listening on port 55410
+Read port: 55410
+WebDriver BiDi listening on ws://127.0.0.1:55406
+1665709706869	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-10-13 18:08:26.869 plugin-container[63938:2605367] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:08:26.870 plugin-container[63938:2605367] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:08:26.978 plugin-container[63938:2605367] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:08:26.979 plugin-container[63938:2605367] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:08:26.979 plugin-container[63938:2605445] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:08:26.979 plugin-container[63938:2605445] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofilegV1amn/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55406/devtools/browser/0370e8cf-3f35-4153-9750-32a120812e1a
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
+console.error: "Unable to find target with innerWindowId:4294967298"
+console.error: "Unable to find target with innerWindowId:4294967298"
+console.error: "Unable to find target with innerWindowId:4294967298"
+console.error: "Unable to find target with innerWindowId:4294967298"
+console.error: "Unable to find target with innerWindowId:4294967298"
+console.error: "Unable to find target with innerWindowId:4294967298"
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
+console.error: "Unable to find target with innerWindowId:4294967301"
+console.error: "Unable to find target with innerWindowId:4294967301"
+console.error: "Unable to find target with innerWindowId:4294967301"
+console.error: "Unable to find target with innerWindowId:4294967301"
+console.error: "Unable to find target with innerWindowId:4294967301"
+console.error: "Unable to find target with innerWindowId:4294967301"
+console.error: "Unable to find target with innerWindowId:4294967301"
+console.error: "Unable to find target with innerWindowId:4294967301"
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
+1665710165800	geckodriver	INFO	Listening on 127.0.0.1:55722
+1665710166234	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "55723" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofile4mOOXx"
+1665710168477	Marionette	INFO	Marionette enabled
+2022-10-13 18:16:08.578 plugin-container[64028:2610857] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:16:08.578 plugin-container[64028:2610857] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:16:08.618 plugin-container[64028:2610857] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:16:08.618 plugin-container[64028:2610857] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:16:08.619 plugin-container[64028:2610885] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:16:08.619 plugin-container[64028:2610885] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1665710168722	Marionette	INFO	Listening on port 55729
+Read port: 55729
+WebDriver BiDi listening on ws://127.0.0.1:55723
+1665710168950	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofile4mOOXx/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55723/devtools/browser/9c90a22d-f308-4487-a05c-5bf02de89055
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
+1665710202154	geckodriver	INFO	Listening on 127.0.0.1:55886
+1665710202675	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "55887" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofile6Cd8su"
+2022-10-13 18:16:43.687 plugin-container[64061:2611600] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:16:43.687 plugin-container[64061:2611600] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:16:43.694 plugin-container[64061:2611600] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:16:43.694 plugin-container[64061:2611600] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:16:43.695 plugin-container[64061:2611601] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:16:43.695 plugin-container[64061:2611601] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1665710203718	Marionette	INFO	Marionette enabled
+1665710203766	Marionette	INFO	Listening on port 55893
+Read port: 55893
+WebDriver BiDi listening on ws://127.0.0.1:55887
+1665710204109	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofile6Cd8su/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55887/devtools/browser/d24a56f7-f1d3-44c6-8e5c-d92a00862b87
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
+console.warn: "IGNORED REDUX ACTION:" "AUTOCOMPLETE_CLEAR"
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 391))
+Handler function threw an exception: TypeError: browsingContext.currentWindowGlobal is null
+Stack: isChannelFromSystemPrincipal@resource://devtools/server/actors/network-monitor/utils/network-utils.js:99:1
+exports.createNetworkEvent@resource://devtools/server/actors/network-monitor/utils/network-utils.js:188:33
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:733:32
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:779:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:660:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 99, column: 1
+console.error: (new TypeError("browsingContext.currentWindowGlobal is null", "resource://devtools/server/actors/network-monitor/utils/network-utils.js", 99))
+Handler function threw an exception: TypeError: browsingContext.currentWindowGlobal is null
+Stack: isChannelFromSystemPrincipal@resource://devtools/server/actors/network-monitor/utils/network-utils.js:99:1
+exports.createNetworkEvent@resource://devtools/server/actors/network-monitor/utils/network-utils.js:188:33
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:733:32
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:779:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:660:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 99, column: 1
+console.error: (new TypeError("browsingContext.currentWindowGlobal is null", "resource://devtools/server/actors/network-monitor/utils/network-utils.js", 99))
+Handler function threw an exception: TypeError: browsingContext.currentWindowGlobal is null
+Stack: isChannelFromSystemPrincipal@resource://devtools/server/actors/network-monitor/utils/network-utils.js:99:1
+exports.createNetworkEvent@resource://devtools/server/actors/network-monitor/utils/network-utils.js:188:33
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:733:32
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:779:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:660:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 99, column: 1
+console.error: (new TypeError("browsingContext.currentWindowGlobal is null", "resource://devtools/server/actors/network-monitor/utils/network-utils.js", 99))
+Handler function threw an exception: TypeError: httpActivity.owner is null
+Stack: _sendRequestBody@resource://devtools/server/actors/network-monitor/network-observer.js:1444:7
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:578:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:690:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1444, column: 7
+console.error: (new TypeError("httpActivity.owner is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 1444))
+Handler function threw an exception: TypeError: httpActivity.owner is null
+Stack: _sendRequestBody@resource://devtools/server/actors/network-monitor/network-observer.js:1444:7
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:578:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:690:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1444, column: 7
+console.error: (new TypeError("httpActivity.owner is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 1444))
+Handler function threw an exception: TypeError: httpActivity.owner is null
+Stack: _sendRequestBody@resource://devtools/server/actors/network-monitor/network-observer.js:1444:7
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:578:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:690:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1444, column: 7
+console.error: (new TypeError("httpActivity.owner is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 1444))
+Handler function threw an exception: TypeError: httpActivity.owner is null
+Stack: _onResponseHeader@resource://devtools/server/actors/network-monitor/network-observer.js:1041:5
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:581:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:690:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1041, column: 5
+console.error: (new TypeError("httpActivity.owner is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 1041))
+Handler function _httpStopRequest threw an exception: TypeError: browsingContext.currentWindowGlobal is null
+Stack: isChannelFromSystemPrincipal@resource://devtools/server/actors/network-monitor/utils/network-utils.js:99:1
+exports.createNetworkEvent@resource://devtools/server/actors/network-monitor/utils/network-utils.js:188:33
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:733:32
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:367:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 99, column: 1
+console.error: (new TypeError("browsingContext.currentWindowGlobal is null", "resource://devtools/server/actors/network-monitor/utils/network-utils.js", 99))
+Handler function threw an exception: TypeError: httpActivity.owner is null
+Stack: _onResponseHeader@resource://devtools/server/actors/network-monitor/network-observer.js:1041:5
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:581:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:690:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1041, column: 5
+console.error: (new TypeError("httpActivity.owner is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 1041))
+Handler function _httpStopRequest threw an exception: TypeError: browsingContext.currentWindowGlobal is null
+Stack: isChannelFromSystemPrincipal@resource://devtools/server/actors/network-monitor/utils/network-utils.js:99:1
+exports.createNetworkEvent@resource://devtools/server/actors/network-monitor/utils/network-utils.js:188:33
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:733:32
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:367:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 99, column: 1
+console.error: (new TypeError("browsingContext.currentWindowGlobal is null", "resource://devtools/server/actors/network-monitor/utils/network-utils.js", 99))
+Handler function threw an exception: TypeError: httpActivity.owner is null
+Stack: _onResponseHeader@resource://devtools/server/actors/network-monitor/network-observer.js:1041:5
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:581:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:690:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1041, column: 5
+console.error: (new TypeError("httpActivity.owner is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 1041))
+Handler function _httpStopRequest threw an exception: TypeError: browsingContext.currentWindowGlobal is null
+Stack: isChannelFromSystemPrincipal@resource://devtools/server/actors/network-monitor/utils/network-utils.js:99:1
+exports.createNetworkEvent@resource://devtools/server/actors/network-monitor/utils/network-utils.js:188:33
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:733:32
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:367:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 99, column: 1
+console.error: (new TypeError("browsingContext.currentWindowGlobal is null", "resource://devtools/server/actors/network-monitor/utils/network-utils.js", 99))
+1665710496081	geckodriver	INFO	Listening on 127.0.0.1:57347
+1665710496599	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "57348" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofile0tkIEL"
+1665710498890	Marionette	INFO	Marionette enabled
+2022-10-13 18:21:39.020 plugin-container[64151:2615596] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:21:39.020 plugin-container[64151:2615596] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:21:39.046 plugin-container[64151:2615596] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:21:39.046 plugin-container[64151:2615596] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:21:39.046 plugin-container[64151:2615594] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:21:39.046 plugin-container[64151:2615594] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1665710499143	Marionette	INFO	Listening on port 57365
+Read port: 57365
+WebDriver BiDi listening on ws://127.0.0.1:57348
+1665710499413	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofile0tkIEL/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57348/devtools/browser/f8ce29c8-e148-4d83-976a-82d21298e5e9
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
+1665710577910	geckodriver	INFO	Listening on 127.0.0.1:57859
+1665710578422	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "57860" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofile86DYAM"
+1665710579393	Marionette	INFO	Marionette enabled
+1665710579497	Marionette	INFO	Listening on port 57870
+Read port: 57870
+2022-10-13 18:22:59.705 plugin-container[64176:2616633] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:22:59.705 plugin-container[64176:2616633] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:22:59.747 plugin-container[64176:2616633] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:22:59.747 plugin-container[64176:2616633] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:22:59.747 plugin-container[64176:2616662] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:22:59.747 plugin-container[64176:2616662] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:57860
+1665710579849	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofile86DYAM/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57860/devtools/browser/00c108cc-2717-4c64-ac4c-d96851373279
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
+1665710610471	geckodriver	INFO	Listening on 127.0.0.1:58626
+1665710610981	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "58627" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofileMZ4uDK"
+1665710627869	geckodriver	INFO	Listening on 127.0.0.1:58708
+1665710628378	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "58709" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofileYSKPMJ"
+1665710629171	Marionette	INFO	Marionette enabled
+1665710629253	Marionette	INFO	Listening on port 58720
+2022-10-13 18:23:49.266 plugin-container[64242:2617658] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:23:49.266 plugin-container[64242:2617658] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:23:49.282 plugin-container[64242:2617658] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:23:49.282 plugin-container[64242:2617658] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:23:49.283 plugin-container[64242:2617687] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:23:49.283 plugin-container[64242:2617687] nil host used in call to allowsAnyHTTPSCertificateForHost:
+Read port: 58720
+WebDriver BiDi listening on ws://127.0.0.1:58709
+1665710629531	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofileYSKPMJ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58709/devtools/browser/a02fa420-3136-4510-8e1a-20833566d5de
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
+console.warn: "IGNORED REDUX ACTION:" "AUTOCOMPLETE_CLEAR"
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+Exiting due to channel error.
+Exiting due to channel error.
+1665710654133	geckodriver	INFO	Listening on 127.0.0.1:59523
+1665710654653	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "59524" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofile4BqHTG"
+1665710655522	Marionette	INFO	Marionette enabled
+2022-10-13 18:24:15.630 plugin-container[64268:2618592] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:24:15.631 plugin-container[64268:2618592] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:24:15.657 plugin-container[64268:2618592] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:24:15.657 plugin-container[64268:2618592] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:24:15.657 plugin-container[64268:2618624] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:24:15.657 plugin-container[64268:2618624] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1665710655763	Marionette	INFO	Listening on port 59533
+Read port: 59533
+WebDriver BiDi listening on ws://127.0.0.1:59524
+1665710655961	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofile4BqHTG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59524/devtools/browser/c294474e-c3ef-4982-8d8d-6ab9e38f4c44
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1665711169973	Marionette	INFO	Stopped listening on port 54243
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1665711172032	Marionette	INFO	Stopped listening on port 54373
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1665711173883	Marionette	INFO	Stopped listening on port 55410
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1665711175376	Marionette	INFO	Stopped listening on port 55729
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1665711177167	Marionette	INFO	Stopped listening on port 55893
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1665711179034	Marionette	INFO	Stopped listening on port 57365
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1665711181427	Marionette	INFO	Stopped listening on port 57870
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1665711387017	geckodriver	INFO	Listening on 127.0.0.1:61956
+1665711387535	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "61957" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofilejrNEmw"
+*** You are running in headless mode.
+1665711389409	Marionette	INFO	Marionette enabled
+1665711389474	Marionette	INFO	Listening on port 61962
+Read port: 61962
+2022-10-13 18:36:29.600 plugin-container[64739:2626650] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:36:29.601 plugin-container[64739:2626650] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:36:29.644 plugin-container[64739:2626650] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:36:29.644 plugin-container[64739:2626650] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-13 18:36:29.644 plugin-container[64739:2626689] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-13 18:36:29.644 plugin-container[64739:2626689] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:61957
+1665711389804	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/6b/t83jzcrj3zj728qckvy4kj300000gn/T/rust_mozprofilejrNEmw/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61957/devtools/browser/aa9d9b8a-37b5-41c8-8bde-b805aa523c65
+JavaScript error: https://safe.density.io/static/js/2.a85d70f6.chunk.js, line 2: uncaught exception: [object Object]
