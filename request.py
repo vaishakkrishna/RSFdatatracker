@@ -1,5 +1,6 @@
 from datetime import datetime
 from fileinput import close
+import os
 import math
 import requests
 import json
@@ -32,8 +33,9 @@ headers = {
 
 def setup_csv(file_name):
     if os.path.exists(file_name):
-        input("File already exists. overwrite? (y/n)")
-        if input == "y":
+        i = 'n'
+        #i = input("File already exists. overwrite? (y/n)")
+        if i == "y":
             print("Overwriting...")
         else:
             print("Appending to file...")
@@ -85,7 +87,8 @@ def runner():
 
 if __name__ == "__main__":
     initialie()
-    schedule.every(15).minutes.do(runner)
+    schedule.every(5).minutes.do(runner)
+
     while True:
         schedule.run_pending()
         sleep(30)

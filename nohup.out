@@ -1,0 +1,9 @@
+File already exists. overwrite? (y/n)Traceback (most recent call last):
+  File "request.py", line 88, in <module>
+    initialie()
+  File "request.py", line 79, in initialie
+    setup_csv("rsf_data.csv")
+  File "request.py", line 36, in setup_csv
+    input("File already exists. overwrite? (y/n)")
+OSError: [Errno 9] Bad file descriptor
+Appending to file...
