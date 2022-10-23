@@ -6,6 +6,8 @@ import pandas as pd
 from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
+import schedule
+from time import sleep
 
 myFmt = mdates.DateFormatter('%H:%M')
 days_of_the_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
@@ -57,8 +59,12 @@ def plot_rsf_data(days_of_week_data):
     # Keep line for each day of the week, overlay on graph, find averages
 
 
-def main():
+def runner():
+    
     save_df_array_json(format_rsf_data())
 
 if __name__ == "__main__":
-    main()
+    schedule.every().day.at("23:00").do(runner)
+    while True:
+        schedule.run_pending()
+        sleep(3600)

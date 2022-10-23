@@ -1,9 +1,7 @@
 from datetime import datetime
-from fileinput import close
+
 import os
-import math
 import requests
-import json
 import schedule
 from csv import writer
 from time import sleep

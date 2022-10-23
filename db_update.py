@@ -2,6 +2,8 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
 import json
+import schedule
+from time import sleep
 
 cred = credentials.Certificate("rsf-crowd-data-7a55f97a7e58.json")
 firebase_admin.initialize_app(cred, {
@@ -24,9 +26,12 @@ def update_db_day(day):
         ref.child(day).set(data)
 
 
-def main():
+def runner():
     update_db_all()
 
 
 if __name__ == "__main__":
-    main()
+    schedule.every().day.at("23:00").do(runner)
+    while True:
+        schedule.run_pending()
+        sleep(3600)
