@@ -2,18 +2,10 @@
 # coding: utf-8
 
 
-import enum
 import pandas as pd
 from datetime import datetime
-from datetime import time
-from datetime import timedelta
 import matplotlib.pyplot as plt
-from matplotlib import dates
-from dateutil import tz, parser
 import matplotlib.dates as mdates
-from scipy.interpolate import interp1d
-import numpy as np
-import json
 
 myFmt = mdates.DateFormatter('%H:%M')
 days_of_the_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
