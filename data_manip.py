@@ -2,6 +2,7 @@
 # coding: utf-8
 
 
+import enum
 import pandas as pd
 from datetime import datetime
 from datetime import time
@@ -12,6 +13,7 @@ from dateutil import tz, parser
 import matplotlib.dates as mdates
 from scipy.interpolate import interp1d
 import numpy as np
+import json
 
 myFmt = mdates.DateFormatter('%H:%M')
 days_of_the_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
@@ -29,16 +31,20 @@ def hour_minute_only(dt: datetime) -> datetime:
     return datetime.now().replace(hour=dt.hour, minute=dt.minute, second=0)
 
 
-def save_df_array(df_array):
-    for df in df_array:
-        df.to_csv("data/{}.csv".format(df.name))
+def save_df_array_csv(df_array):
+    for i, day in enumerate(days_of_the_week):
+        df_array[i].to_csv("./data/csv/{}.csv".format(day), index=False)
+
+def save_df_array_json(df_array):
+    for i, day in enumerate(days_of_the_week):
+        df_array[i].to_json("./data/json/{}.json".format(day), orient="records")
+            
 def format_rsf_data():
     rsf_data = pd.read_csv("rsf_data.csv")
     rsf_data["Date"] = pd.to_datetime(rsf_data["Date"], format="%d/%m/%Y %H:%M:%S")
     rsf_data["Date"] = rsf_data["Date"] - pd.Timedelta(hours=7)
     rsf_data = rsf_data[rsf_data["Date"].apply(within_opening_hours)].reindex()
     days_of_week_data = [rsf_data[rsf_data["Date"].apply(datetime.weekday) == i] for i in range(7)]
-
     for i in range(7):
         # group by 10-minute intervals and find the mean of "Weight Rooms" in each group
         days_of_week_data[i] = days_of_week_data[i].groupby(pd.Grouper(key="Date", freq="20min"))["Weight Rooms"].mean().reset_index()
@@ -58,4 +64,9 @@ def plot_rsf_data(days_of_week_data):
     plt.show()
     # Keep line for each day of the week, overlay on graph, find averages
 
-save_df_array(format_rsf_data())
+
+def main():
+    save_df_array_json(format_rsf_data())
+
+if __name__ == "__main__":
+    main()
