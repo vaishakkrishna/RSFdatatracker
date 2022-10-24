@@ -10,10 +10,21 @@ import {
 	Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
-import Papa from "papaparse";
-
-
+import { initAndGetFirebaseDB } from "../utils/init_firebase";
+import { ref, onValue } from "firebase/database";
+import { colorsOfTheWeek } from "../utils/constants";
+import { daysOfTheWeek } from "../utils/constants";
 function LineChart(props) {
+	const daysOfTheWeek = [
+		"Monday",
+		"Tuesday",
+		"Wednesday",
+		"Thursday",
+		"Friday",
+		"Saturday",
+		"Sunday",
+	];
+	const db = initAndGetFirebaseDB();
 	ChartJS.register(
 		CategoryScale,
 		LinearScale,
@@ -23,16 +34,40 @@ function LineChart(props) {
 		Tooltip,
 		Legend
 	);
-	Papa.parse("./data/Monday.csv", {
-		header: true,
-		skipEmptyLines: true,
-		complete: function (results) {
-		  console.log(results.data)
-		},
-	  });
+
+	var allDaysDataObject;
+	var allDaysData = [];
+	var data;
+	const dayRef = ref(db, "byday");
+	onValue(dayRef, (snapshot) => {
+		allDaysData = snapshot.val();
+		console.log(allDaysData)
+		data = putDataIntoDS(allDaysData);
+	});
+
+	// // returns 3-d array where arr[i] is the data for the ith day
+	// // arr[i][0] is the x-axis data for the ith day
+	// // arr[i][1] is the y-axis data for the ith day
+	// function getAllDaysDataFromObject(allDaysObj) {
+	// 	var allDaysData = [];
+	// 	for (var day in allDaysObj) {
+	// 		var dayData = allDaysObj[day];
+	// 		var dayDataArray = [];
+	// 		var dayDataArrayX = [];
+	// 		var dayDataArrayY = [];
+	// 		for (var index in dayData) {
+	// 			dayDataArrayX.push(dayData[index]["Date"]);
+	// 			dayDataArrayY.push(dayData[index]["Weight Rooms"]);
+	// 		}
+	// 		dayDataArray.push(dayDataArrayX);
+	// 		dayDataArray.push(dayDataArrayY);
+	// 		allDaysData.push(dayDataArray);
+	// 	}
+	// 	return allDaysData;
+	// }
+
 	const dayOfTheWeek = props.day;
-	var csv_rows = [];
-  
+
 	//log the data
 	// console.log(csv_data);
 	const options = {
@@ -43,30 +78,42 @@ function LineChart(props) {
 			},
 			title: {
 				display: true,
-				text: "Chart.js Line Chart",
+				text: "RSF Crowd Data",
 			},
 		},
 	};
-	var labels = []
-	// // add labels in 20 minute intervals from 7am to 11pm
-	for (var i = 7; i < 23; i++) {
-		for (var j = 0; j < 60; j += 20) {
-			labels.push(`${i}:${j}`);
+	function putDataIntoDS(allDaysData){
+		var datasets = [];
+		for (var day in allDaysData) {
+			var dayData = allDaysData[day];
+			datasets.push({
+				label: day,
+				data: dayData,
+				parsing: {
+					xAxisKey: 'Date',
+					yAxisKey: 'Weight Rooms'
+				}
+			})
 		}
+		var data = {
+			labels: daysOfTheWeek,
+			datasets: datasets,
+		}
+		return data;
 	}
+	
 
-	const data = {
-		labels,
-		datasets: [
-			{
-				label: "Monday",
-				data: labels.map(() =>
-					3),
-				borderColor: 'rgb(53, 162, 235)',
-      			backgroundColor: 'rgba(53, 162, 235, 0.5)',
-			},
-		],
-	};
+	// // define datasets
+	// const data = allDaysData.map((dayData, ind) => {
+	// 	return {
+	// 		label: daysOfTheWeek[ind],
+	// 		data: dayData,
+	// 		fill: false,
+	// 		borderColor: colorsOfTheWeek[ind],
+	// 		tension: 0.1,
+	// 	};
+	// });
+
 	return (
 		<div>
 			<Line options={options} data={data} />
