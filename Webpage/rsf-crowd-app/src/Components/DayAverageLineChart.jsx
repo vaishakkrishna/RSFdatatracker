@@ -8,8 +8,9 @@ import {
 	Tooltip,
 	Legend,
 	ResponsiveContainer,
+	Label,
 } from "recharts";
-
+import "./DayAverageLineChart.css"
 import { initAndGetFirebaseDB } from "../utils/init_firebase";
 import { ref, onValue } from "firebase/database";
 import { colorsOfTheWeek } from "../utils/constants";
@@ -74,8 +75,6 @@ function DayAverageLineChart(props) {
 					"Weight Rooms": mean(newDayDataSeries[time]),
 				});
 			}
-
-			console.log(newDayData);
 			series.push({
 				name: day,
 				data: newDayData,
@@ -115,30 +114,31 @@ function DayAverageLineChart(props) {
 	}, []);
 
 	return (
-		<>
+		<div className="DayAverageChart">
 			<LineChart
-				width={1000}
-				height={500}
+				width={props.width || 500}
+				height={props.height || 300}
 				margin={{
 					top: 5,
 					right: 30,
 					left: 20,
-					bottom: 5,
+					bottom: 10,
 				}}
 			>
 				<CartesianGrid strokeDasharray="3 3" />
-				<XAxis dataKey="Date" type="category" allowDuplicatedCategory={false} />
-				<YAxis dataKey="Weight Rooms" />
+				<XAxis dataKey="Date" type="category" allowDuplicatedCategory={false} tick={{fill:'white'}}>
+				<Label value="Time" position="insideBottom" offset={-10} fill="white" />
+				</XAxis>
+
+				<YAxis dataKey="Weight Rooms" tick={{fill:'white'}}>
+				<Label value="% Full" angle="-90" position="insideLeft" fill="white" />
+				</YAxis>
 				<Tooltip />
-				<Legend />
-				{/* <Line
-						type="monotone"
-						dataKey="Weight Rooms"
-						stroke="#8884d8"
-						activeDot={{ r: 3 }}
-					/> */}
+
+				<Legend verticalAlign="top" />
 				{data &&
 					data.map((s) => (
+						props.days[s.name] && (
 						<Line
 							type="monotone"
 							dataKey="Weight Rooms"
@@ -147,10 +147,12 @@ function DayAverageLineChart(props) {
 							key={s.name}
 							stroke={colorsOfTheWeek[s.name]}
 							strokeWidth={2}
+							radius={1}
+							dot={false}
 						/>
-					))}
+					)))}
 			</LineChart>
-		</>
+		</div>
 	);
 }
 export default DayAverageLineChart;

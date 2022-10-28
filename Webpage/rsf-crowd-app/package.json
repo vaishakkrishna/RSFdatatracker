@@ -11,6 +11,7 @@
     "jquery-csv": "^1.0.21",
     "papaparse": "^5.3.2",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
     "react-chartjs-2": "^4.3.1",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
