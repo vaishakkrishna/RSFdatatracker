@@ -1892,4 +1892,7 @@ RSF is 80.0 % full
 RSF is 76.0 % full
 RSF is 70.7 % full
 RSF is 66.7 % full
-RSF is 74.7 % full
+RSF is 74.7 % fullTraceback (most recent call last):
+  File "data_manip.py", line 70, in <module>
+    sleep(3600)
+KeyboardInterrupt

@@ -36,12 +36,12 @@ def save_df_array_json(df_array):
 def format_rsf_data():
     rsf_data = pd.read_csv("rsf_data.csv")
     rsf_data["Date"] = pd.to_datetime(rsf_data["Date"], format="%d/%m/%Y %H:%M:%S")
-    rsf_data["Date"] = rsf_data["Date"] - pd.Timedelta(hours=7)
+    # rsf_data["Date"] = rsf_data["Date"] - pd.Timedelta(hours=7)
     rsf_data = rsf_data[rsf_data["Date"].apply(within_opening_hours)].reindex()
     days_of_week_data = [rsf_data[rsf_data["Date"].apply(datetime.weekday) == i] for i in range(7)]
-    for i in range(7):
+    # for i in range(7):
         # group by 10-minute intervals and find the mean of "Weight Rooms" in each group
-        days_of_week_data[i] = days_of_week_data[i].groupby(pd.Grouper(key="Date", freq="20min"))["Weight Rooms"].mean().reset_index()
+        # days_of_week_data[i] = days_of_week_data[i].groupby(pd.Grouper(key="Date", freq="20min"))["Weight Rooms"].mean().reset_index()
     return days_of_week_data
 def plot_rsf_data(days_of_week_data):
     pd.plotting.register_matplotlib_converters()
