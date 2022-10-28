@@ -8,6 +8,13 @@
   overflow-x: scroll;
 
 }
+.forms {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1vh;
+}
 .selector {
   margin-top: 2vh;
   padding: 1vh;
