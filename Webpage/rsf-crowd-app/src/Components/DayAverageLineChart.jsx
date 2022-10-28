@@ -140,11 +140,13 @@ function DayAverageLineChart(props) {
 				{data &&
 					data.map((s) => (
 						<Line
+							type="monotone"
 							dataKey="Weight Rooms"
 							data={s.data}
 							name={s.name}
 							key={s.name}
 							stroke={colorsOfTheWeek[s.name]}
+							strokeWidth={2}
 						/>
 					))}
 			</LineChart>
