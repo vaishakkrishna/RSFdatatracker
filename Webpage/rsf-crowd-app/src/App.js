@@ -1,7 +1,7 @@
 
 import './App.css'
 import 'd3'
-import LineChart from './Components/LineChart';
+import DayAverageLineChart from './Components/DayAverageLineChart';
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   
   return (
     <div className="App">
-      <LineChart day="Monday"/>
+      <DayAverageLineChart day="Monday"/>
      
     </div>
   );

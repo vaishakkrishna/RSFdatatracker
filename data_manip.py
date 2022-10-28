@@ -2,6 +2,7 @@
 # coding: utf-8
 
 
+from calendar import weekday
 import pandas as pd
 from datetime import datetime
 import matplotlib.pyplot as plt
@@ -10,17 +11,20 @@ import schedule
 from time import sleep
 
 myFmt = mdates.DateFormatter('%H:%M')
-days_of_the_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+days_of_the_week = ["Monday", "Tuesday", "Wednesday",
+                    "Thursday", "Friday", "Saturday", "Sunday"]
 
 
 def within_opening_hours(dt: datetime) -> bool:
+    dt = dt - pd.Timedelta(hours=7)
     if 0 <= dt.weekday() <= 4:
         return 7 <= dt.hour <= 22
     elif dt.weekday() == 5:
         return 8 <= dt.hour <= 17
     else:
         return 8 <= dt.hour <= 22
-    
+
+
 def hour_minute_only(dt: datetime) -> datetime:
     return datetime.now().replace(hour=dt.hour, minute=dt.minute, second=0)
 
@@ -29,20 +33,28 @@ def save_df_array_csv(df_array):
     for i, day in enumerate(days_of_the_week):
         df_array[i].to_csv("./data/csv/{}.csv".format(day), index=False)
 
+
 def save_df_array_json(df_array):
     for i, day in enumerate(days_of_the_week):
-        df_array[i].to_json("./data/json/{}.json".format(day), orient="records")
-            
+        df_array[i].to_json(
+            "./data/json/{}.json".format(day), orient="records")
+
+
 def format_rsf_data():
     rsf_data = pd.read_csv("rsf_data.csv")
-    rsf_data["Date"] = pd.to_datetime(rsf_data["Date"], format="%d/%m/%Y %H:%M:%S")
-    # rsf_data["Date"] = rsf_data["Date"] - pd.Timedelta(hours=7)
+    rsf_data["Date"] = pd.to_datetime(
+        rsf_data["Date"], format="%d/%m/%Y %H:%M:%S")
+    # # rsf_data["Date"] = rsf_data["Date"] - pd.Timedelta(hours=7)
     rsf_data = rsf_data[rsf_data["Date"].apply(within_opening_hours)].reindex()
-    days_of_week_data = [rsf_data[rsf_data["Date"].apply(datetime.weekday) == i] for i in range(7)]
-    # for i in range(7):
-        # group by 10-minute intervals and find the mean of "Weight Rooms" in each group
-        # days_of_week_data[i] = days_of_week_data[i].groupby(pd.Grouper(key="Date", freq="20min"))["Weight Rooms"].mean().reset_index()
+    days_of_week_data = [rsf_data[rsf_data["Date"].apply(
+        datetime.weekday) == i] for i in range(7)]
+    # # for dayframe, i in enumerate(days_of_week_data):
+
+    #     # days_of_week_data[i] = days_of_week_data[i].groupby(pd.Grouper(
+    #         key="Date", freq="20min"))["Weight Rooms"].mean().reset_index()
     return days_of_week_data
+
+
 def plot_rsf_data(days_of_week_data):
     pd.plotting.register_matplotlib_converters()
     plt_1, ax = plt.subplots()
@@ -60,11 +72,13 @@ def plot_rsf_data(days_of_week_data):
 
 
 def runner():
-    
+
     save_df_array_json(format_rsf_data())
+
 
 if __name__ == "__main__":
     schedule.every().day.at("23:00").do(runner)
     while True:
         schedule.run_pending()
         sleep(3600)
+    runner()
