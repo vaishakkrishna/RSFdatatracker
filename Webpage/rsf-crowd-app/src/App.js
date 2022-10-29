@@ -60,7 +60,7 @@ function App() {
       <DayAverageLineChart samplingInterval={samplingInterval} days={days} width={Math.max(windowDimensions["width"], 600)} height={Math.max(windowDimensions["width"]/2, 350) }
       animate={animate}/>
       <div className='forms'>
-        <div className='interval-select'>
+        {/* <div className='interval-select'>
           <Form>
             <Form.Group as={Row}>
               <Col xs="9">
@@ -73,7 +73,7 @@ function App() {
               </Col>
             </Form.Group>
           </Form>
-        </div>
+        </div> */}
         <div className='selector'>
       {
         daysOfTheWeek.map((day)=>{
