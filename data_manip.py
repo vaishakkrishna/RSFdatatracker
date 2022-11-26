@@ -16,7 +16,6 @@ days_of_the_week = ["Monday", "Tuesday", "Wednesday",
 
 
 def within_opening_hours(dt: datetime) -> bool:
-    dt = dt - pd.Timedelta(hours=7)
     if 0 <= dt.weekday() <= 4:
         return 7 <= dt.hour <= 22
     elif dt.weekday() == 5:
@@ -44,7 +43,7 @@ def format_rsf_data():
     rsf_data = pd.read_csv("rsf_data.csv")
     rsf_data["Date"] = pd.to_datetime(
         rsf_data["Date"], format="%d/%m/%Y %H:%M:%S")
-    # # rsf_data["Date"] = rsf_data["Date"] - pd.Timedelta(hours=7)
+    rsf_data["Date"] = rsf_data["Date"] - pd.Timedelta(hours=7)
     rsf_data = rsf_data[rsf_data["Date"].apply(within_opening_hours)].reindex()
     days_of_week_data = [rsf_data[rsf_data["Date"].apply(
         datetime.weekday) == i] for i in range(7)]
